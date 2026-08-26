@@ -38,7 +38,7 @@ Four stages: clean (strip HTML, lowercase, remove punctuation/digits) → tokeni
 | Naive Bayes | 86.93% | 0.87 | 0.87 |
 | **SVM (LinearSVC)** | **89.45%** | 0.89 | 0.89 |
 
-Note: fixing both bugs barely moved these numbers (86.90%→86.92%, 89.25%→89.43%) — expected on a dataset this large, since global IDF statistics and stopword effects average out similarly with or without the leakage. The fixes matter for individual predictions on negation-heavy reviews and for methodological correctness, not for this aggregate metric.
+Note: fixing both bugs barely moved these numbers (86.90%→86.93%, 89.25%→89.45%) — expected on a dataset this large, since global IDF statistics and stopword effects average out similarly with or without the leakage. The fixes matter for individual predictions on negation-heavy reviews and for methodological correctness, not for this aggregate metric.
 
 Both models correctly classified hand-written test reviews, including a deliberately ambiguous one ("okay, not great but not terrible either") — both called it negative.
 
